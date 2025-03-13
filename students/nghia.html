@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeTranTrongNghia</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#1e40af',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <div class="mb-4">
+            <a href="/index.html" class="inline-block bg-primary text-white px-4 py-2 rounded hover:bg-secondary">
+                Quay về
+            </a>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <!-- Profile Header -->
+            <div class="bg-gradient-to-r from-primary to-secondary text-white p-8 flex flex-col md:flex-row items-center gap-6">
+                <img src="https://media.licdn.com/dms/image/v2/D4E03AQGEJnEcDP1hjA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727439995324?e=1746662400&v=beta&t=NVmivJNhkKBRNgRcGO8CFkSkD3wKt6njBoS8splMqEk" 
+                     alt="Ảnh đại diện" 
+                     class="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg">
+                <div class="text-center md:text-left">
+                    <h1 class="text-3xl font-bold">Le Tran Trong Nghia</h1>
+                    <p class="text-xl mt-2 opacity-90">Software Developer</p>
+                </div>
+            </div>
+            
+            <!-- Content -->
+            <div class="p-8">
+                <section class="mb-8">
+                    <h2 class="text-2xl font-semibold border-b border-gray-200 pb-2 mb-4">Giới thiệu</h2>
+                    <p class="text-gray-700"> Mình là một sinh viên năm ba ngành Kỹ thuật Phần mềm với đam mê sâu sắc về lập trình và phát triển phần mềm. Với những kinh nghiệm trong lĩnh vực kiểm thử phần mềm, mìnhmình có nền tảng vững chắc về xây dựng phần mềm, đồng thời sở hữu kỹ năng lập trình mạnh mẽ với ReactJS, Tailwind CSS, Firebase, MongoDB, Java và SQL Server. Hiện tại, mình đang tham gia nhiều dự án thực tế, bao gồm phát triển website học lập trình tích hợp AI, xây dựng chatbot hỗ trợ khách hàng cho Nam Á Bank và thiết kế hệ thống thông báo qua email. Ngoài ra, mình còn tích cực tham gia các cuộc thi công nghệ, như Google Gemini API Developer Contest, để thử thách bản thân và mở rộng kiến thức.</p>
+                </section>
+
+                <section class="mb-8">
+                    <h2 class="text-2xl font-semibold border-b border-gray-200 pb-2 mb-4">Kinh nghiệm làm việc</h2>
+                    <ul class="space-y-3">
+                        <li class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <div class="flex flex-col md:flex-row md:justify-between">
+                                <strong class="text-primary">Nam Á Bank</strong>
+                                <span class="text-gray-500">Chuyên viên ban chuyển đổi số</span>
+                            </div>
+                        </li>
+                        <!-- <li class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <div class="flex flex-col md:flex-row md:justify-between">
+                                <strong class="text-primary">Công ty B</strong>
+                                <span class="text-gray-500">Chức danh (Thời gian)</span>
+                            </div>
+                        </li> -->
+                    </ul>
+                </section>
+
+                <section class="mb-8">
+                    <h2 class="text-2xl font-semibold border-b border-gray-200 pb-2 mb-4">Dự án</h2>
+                    <ul class="space-y-3">
+                        <li class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <a href="https://github.com/LeTranTrongNghia/CodeHub_BaseProject" class="text-primary hover:text-secondary font-medium">Nam Á ChatbotChatbot</a>
+                            <p class="text-gray-700 mt-1">Chatbot tư vấn khách hàng tại Nam Á Bank.</p>
+                        </li>
+                        <li class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <a href="#" class="text-primary hover:text-secondary font-medium">Codehub</a>
+                            <p class="text-gray-700 mt-1">Website học code với AI</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-semibold border-b border-gray-200 pb-2 mb-4">Liên hệ</h2>
+                    <div class="space-y-2">
+                        <p class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <span>Email: <a href="mailto:trongnghiaa.work@gmail.com" class="text-primary hover:text-secondary">trongnghiaa.work@gmail.com</a></span>
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v7h4v-7M4 8h4v4H4V8z" />
+                            </svg>
+                            <span>LinkedIn: <a href="https://www.linkedin.com/in/le-tran-trong-nghia/" class="text-primary hover:text-secondary" target="_blank" rel="noopener">Le Tran Trong Nghia</a></span>
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                            </svg>
+                            <span>GitHub: <a href="https://github.com/LeTranTrongNghia" class="text-primary hover:text-secondary" target="_blank" rel="noopener">LeTranTrongNghia</a></span>
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="mt-6 text-center text-gray-500 text-sm">
+            &copy; 2025 Le Tran Trong Nghia
+        </footer>
+    </div>
+</body>
+</html>
